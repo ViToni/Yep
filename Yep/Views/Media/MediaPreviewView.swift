@@ -78,8 +78,8 @@ final class MediaPreviewView: UIView {
                                 if currentItem.status == .ReadyToPlay {
                                     let durationSeconds = CMTimeGetSeconds(currentItem.duration)
                                     let currentSeconds = CMTimeGetSeconds(time)
-                                    let coundDownTime = Double(Int((durationSeconds - currentSeconds) * 10)) / 10
-                                    self.mediaControlView.timeLabel.text = "\(coundDownTime)"
+                                    let countDownTime = Double(Int((durationSeconds - currentSeconds) * 10)) / 10
+                                    self.mediaControlView.timeLabel.text = "\(countDownTime)"
                                 }
                             })
 
